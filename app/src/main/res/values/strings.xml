@@ -1,0 +1,99 @@
+<resources>
+    <string name="app_name">SweetReads</string>
+
+    <string name="main_activity_name">Sweet Reads</string>
+    <string name="search_books_fragment_name">Search</string>
+    <string name="add_books_fragment_name">Add</string>
+    <string name="remove_books_fragment_name">Remove</string>
+
+    <string name="inventory_search_topic">Welcome To Search Books</string>
+    <string name="inventory_search_slot">Type here...</string>
+    <string name="search_button">Search</string>
+
+    <string name="inventory_add_topic">Welcome To Add Books</string>
+    <string name="inventory_add_book_name_topic">Enter a book name</string>
+    <string name="inventory_add_book_name_slot">NAME</string>
+    <string name="inventory_add_book_price_topic">Enter a price (LKR)</string>
+    <string name="inventory_add_book_price_slot">LKR</string>
+    <string name="inventory_add_book_url_topic">Enter the URL</string>
+    <string name="inventory_add_book_url_slot">URL</string>
+    <string name="add_button">ADD</string>
+
+    <string name="inventory_remove_topic">Welcome To Remove Books</string>
+    <string name="inventory_remove_topic_name">Enter a book name</string>
+    <string name="inventory_remove_book_name_slot">Type here...</string>
+    <string name="remove_button">Remove</string>
+
+    <string name="display_search_results_header">.................</string>
+    <string name="display_search_keyword">.................</string>
+
+    <string name="options_01">SignIn/SignUp</string>
+    <string name="options_02">Client</string>
+    <string name="options_03">Inventory</string>
+    <string name="options_04">Shop</string>
+    <string name="options_05">Payment</string>
+    <string name="options_06">User Profile</string>
+    <string name="options_07">Settings</string>
+
+    <string name="options_contact_us">Contact Us</string>
+
+    <string name="logout_txt">Logout</string>
+
+    <string name="sign_in_email">Enter email</string>
+    <string name="sign_in_password">Enter password</string>
+    <string name="sign_in_button">Sign In</string>
+
+    <string name="sign_up_username">Enter username</string>
+    <string name="sign_up_email">Enter email</string>
+    <string name="sign_up_password">Enter password</string>
+    <string name="sign_up_button">Sign Up</string>
+
+    <string name="client_search_topic">Welcome To Search</string>
+    <string name="client_search_topic_slot">Type here...</string>
+    <string name="client_search_button">Search</string>
+
+    <string name="user_profile_topic">User Profile</string>
+    <string name="user_profile_email">Email</string>
+    <string name="user_profile_email_slot">enter a new email....</string>
+    <string name="user_profile_password">Password</string>
+    <string name="user_profile_password_slot">enter a new password....</string>
+    <string name="user_profile_edit_button">Edit Profile</string>
+    <string name="user_profile_delete_button">Delete Profile</string>
+
+    <string name="payment_main_header">Add Your Card Details</string>
+
+    <string name="payment_option">Add Your Card Details</string>
+
+    <string name="payment_option_01">Master</string>
+    <string name="payment_option_02">Visa</string>
+
+    <string name="payment_card_number">Card Number</string>
+    <string name="payment_card_number_slot">xxxxxxxxxx</string>
+
+    <string name="payment_card_expiry_date_button">Select Expiry Date</string>
+    <string name="payment_card_expiry_date_slot">mm/dd/yyyy</string>
+
+    <string name="payment_card_cvv">Card CVV</string>
+    <string name="payment_card_cvv_slot">xxx</string>
+
+    <string name="payment_card_reset_details_button">RESET</string>
+    <string name="payment_card_proceed_to_pay_button">PAY NOW</string>
+
+    <string name="selected_item_header">ITEM INFO</string>
+    <string name="selected_item_name_topic">Item Name</string>
+    <string name="selected_item_name_slot">..............</string>
+    <string name="selected_item_price_topic">Item Price</string>
+    <string name="selected_item_price_slot">..............</string>
+    <string name="selected_item_proceed_button">PROCEED</string>
+
+    <string name="contact_us_header">Contact Us</string>
+    <string name="contact_us_on_whatsapp_button">On Whatsapp</string>
+    <string name="contact_us_on_telegram_button">On Telegram</string>
+    <string name="contact_us_on_viber">Contact Us</string>
+
+    <string name="payment_delete_topic">You can delete payment records from here.....</string>
+    <string name="payment_delete_slot">xxxx-xx-xx_xx-xx-xx--xxx</string>
+    <string name="payment_delete_single_button">Delete</string>
+    <string name="payment_delete_logout_button">Logout</string>
+
+</resources>

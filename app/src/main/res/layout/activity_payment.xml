@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background_payment"
+    tools:context=".shop.PaymentActivity">
+
+    <TextView
+        android:id="@+id/payment_main_header"
+        android:layout_width="293dp"
+        android:layout_height="59dp"
+        android:hint="@string/payment_main_header"
+        android:textColorHint="@color/white"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toTopOf="@+id/payment_option"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <RadioGroup
+        android:id="@+id/payment_option"
+        android:layout_width="154dp"
+        android:layout_height="62dp"
+        app:layout_constraintBottom_toTopOf="@+id/payment_card_number"
+        app:layout_constraintEnd_toStartOf="@+id/visa_image"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/payment_main_header">
+
+        <RadioButton
+            android:id="@+id/payment_option_02"
+            android:layout_width="155dp"
+            android:layout_height="36dp"
+            android:checked="true"
+            android:onClick="checkButton"
+            android:text="@string/payment_option_02"
+            android:textColor="@color/white"
+            android:textSize="16sp" />
+
+        <RadioButton
+            android:id="@+id/payment_option_01"
+            android:layout_width="173dp"
+            android:layout_height="30dp"
+            android:onClick="checkButton"
+            android:text="@string/payment_option_01"
+            android:textColor="@color/white"
+            android:textSize="16sp" />
+
+    </RadioGroup>
+
+    <ImageView
+        android:id="@+id/visa_image"
+        android:layout_width="101dp"
+        android:layout_height="27dp"
+        android:layout_marginStart="36dp"
+        app:layout_constraintStart_toEndOf="@+id/payment_option"
+        app:layout_constraintTop_toTopOf="@+id/payment_option"
+        app:srcCompat="@drawable/visa" />
+
+    <ImageView
+        android:id="@+id/master_image"
+        android:layout_width="99dp"
+        android:layout_height="34dp"
+        android:layout_marginStart="36dp"
+        app:layout_constraintBottom_toBottomOf="@+id/payment_option"
+        app:layout_constraintStart_toEndOf="@+id/payment_option"
+        app:srcCompat="@drawable/master" />
+
+    <TextView
+        android:id="@+id/payment_card_number"
+        android:layout_width="144dp"
+        android:layout_height="32dp"
+        android:text="@string/payment_card_number"
+        android:textColor="@color/white"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toTopOf="@+id/payment_card_number_slot"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/payment_option" />
+
+    <EditText
+        android:id="@+id/payment_card_number_slot"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="@string/payment_card_number_slot"
+        android:inputType="number"
+        android:textColor="@color/white"
+        android:textColorHint="@color/white"
+        app:layout_constraintBottom_toTopOf="@+id/payment_card_expiry_date_button"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/payment_card_number" />
+
+    <Button
+        android:id="@+id/payment_card_expiry_date_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/payment_card_expiry_date_button"
+        app:layout_constraintBottom_toTopOf="@+id/payment_card_expiry_date_slot"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/payment_card_number_slot" />
+
+    <EditText
+        android:id="@+id/payment_card_expiry_date_slot"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:focusable="false"
+        android:hint="@string/payment_card_expiry_date_slot"
+        android:inputType="date"
+        android:textColor="@color/white"
+        android:textColorHint="@color/white"
+        android:textIsSelectable="true"
+        app:layout_constraintBottom_toTopOf="@+id/payment_card_cvv"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/payment_card_expiry_date_button" />
+
+    <TextView
+        android:id="@+id/payment_card_cvv"
+        android:layout_width="124dp"
+        android:layout_height="31dp"
+        android:text="@string/payment_card_cvv"
+        android:textColor="@color/white"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toTopOf="@+id/payment_card_cvv_slot"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/payment_card_expiry_date_slot" />
+
+    <EditText
+        android:id="@+id/payment_card_cvv_slot"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="@string/payment_card_cvv_slot"
+        android:inputType="number"
+        android:textColor="@color/white"
+        android:textColorHint="@color/white"
+        app:layout_constraintBottom_toTopOf="@+id/payment_card_proceed_to_pay_button"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/payment_card_cvv" />
+
+
+    <Button
+        android:id="@+id/payment_card_proceed_to_pay_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/payment_card_proceed_to_pay_button"
+        android:textColor="@color/white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/payment_card_cvv_slot" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
